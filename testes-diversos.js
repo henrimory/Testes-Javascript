@@ -908,10 +908,13 @@ function deixaEntrar(dataDeNascimento, censura) {
   return calcularIdade(dataDeNascimento, censura);
 }
 ==========================================================
-/*Uma loja virtual permite a seus visitantes filtrar produtos pelo preço. Existe um array com os preços dos produtos. Um programador já criou uma função maisBaratosQue(valor, precos) que retorna um array com os preços dos produtos mais baratos que o valor passado como parâmetro. Outro programador já criou uma função maisCarosQue(valor, precos) que retorna um array com os preços mais caros que o valor passado como parâmetro. Chegou sua vez!
+/*Uma loja virtual permite a seus visitantes filtrar produtos pelo preço. Existe um array com os preços dos produtos.
+Um programador já criou uma função maisBaratosQue(valor, precos) que retorna um array com os preços dos produtos mais baratos que o valor passado como parâmetro.
+Outro programador já criou uma função maisCarosQue(valor, precos) que retorna um array com os preços mais caros que o valor passado como parâmetro. Chegou sua vez!
 
 
-Crie uma função precosEntre(valorMenor, valorMaior, precos) que deve utilizar as funções maisBaratosQue e maisCarosQue para retornar os preços que estão entre o valorMenor e o valorMaior. Sua função deve receber então dois parâmetros:
+Crie uma função precosEntre(valorMenor, valorMaior, precos) que deve utilizar as funções maisBaratosQue e maisCarosQue para retornar os preços que estão entre o valorMenor e o valorMaior.
+Sua função deve receber então dois parâmetros:
 
 valorMenor para representar o valor mínimo dos preços a serem listados
 
@@ -948,7 +951,9 @@ Porém na função precosEntre você possui 3 variáveis, pois você limita o va
 maisCarosQue(valorMenor, maisBaratosQue(valorMaior, precos)
 
 
-, pois o parametro valor da função maisCarosQue passa a ser o valorMenor, ou seja, o mínimo valor que pode assumir, e o parâmetro preços passa a ser a função maisBaratosQue, sendo seu parâmetro valor definido como valorMaior, para que os preços que forem ser usados na função maisCarosQue já sejam os valores limitados de acordo com o máximo que podem assumir.
+, pois o parametro valor da função maisCarosQue passa a ser o valorMenor, ou seja, o mínimo valor que pode assumir,
+e o parâmetro preços passa a ser a função maisBaratosQue, sendo seu parâmetro valor definido como valorMaior,
+para que os preços que forem ser usados na função maisCarosQue já sejam os valores limitados de acordo com o máximo que podem assumir.
 */
 
 =====================================
@@ -977,7 +982,8 @@ function gerarDezenas(){
  
  }
  ============================================
- /*No fim de semana o elevador do nosso prédio quebrou, restringindo muito o fluxo de pessoas. Considerando isso, apenas os moradores dos apartamentos com número par poderão usar o elevador. Escreva um código que, com base na variável moradores nos informe quais moradores poderão utilizar o elevador. O número do apartamento é a sua posição no array, e o nome do morador é o valor.
+ /*No fim de semana o elevador do nosso prédio quebrou, restringindo muito o fluxo de pessoas. Considerando isso, apenas os moradores dos apartamentos com número par poderão usar o elevador.
+ Escreva um código que, com base na variável moradores nos informe quais moradores poderão utilizar o elevador. O número do apartamento é a sua posição no array, e o nome do morador é o valor.
 
 Imprima no console a lista a seguinte frase: 'O morador ' + nome do morador + ' pode usar o elevador'
 */
@@ -998,9 +1004,11 @@ for(var i = 0; i < moradores.length; i ++){
 }
 
 =======================================================
-/*Em uma  academia está acontecendo um cadastro de vários usuários contendo as seguintes informações: nome, idade e altura. E para realizar um determinado treino, existe alguns requisitos: Ter 18 anos ou mais e ter uma altura igual ou maior a 1,70.
+/*Em uma  academia está acontecendo um cadastro de vários usuários contendo as seguintes informações: nome, idade e altura.
+E para realizar um determinado treino, existe alguns requisitos: Ter 18 anos ou mais e ter uma altura igual ou maior a 1,70.
 
-Crie uma função chamada maiorAlto que retorne verdadeiro (true) caso ele atenda os requisitos, e falso (false) para o contrário. Nessa função você irá receber um parâmetro que será um array, contendo na primeira posição o nome, segunda posição a idade do aluno e na terceira contendo a altura em Centímetros.
+Crie uma função chamada maiorAlto que retorne verdadeiro (true) caso ele atenda os requisitos, e falso (false) para o contrário.
+Nessa função você irá receber um parâmetro que será um array, contendo na primeira posição o nome, segunda posição a idade do aluno e na terceira contendo a altura em Centímetros.
 
 Exemplo
 
@@ -1031,7 +1039,8 @@ function maiorAlto(usuario) {
 }
 ====================================================================
 /*
-Uma academia precisa separar grupos de pessoas tendo como base a sua altura para que dessa forma consiga formar grupos para as aulas de zumba. Temos um array que lista a altura de cada aluno da academia, e outros 3 arrays (Grupo A, B e C) que são classificados da seguinte forma: 
+Uma academia precisa separar grupos de pessoas tendo como base a sua altura para que dessa forma consiga formar grupos para as aulas de zumba.
+Temos um array que lista a altura de cada aluno da academia, e outros 3 arrays (Grupo A, B e C) que são classificados da seguinte forma: 
 
 grupoA - Alunos com altura entre 150 a 159
 grupoB - Alunos com altura entre 160 a 169
@@ -1069,7 +1078,9 @@ function zumbaClass(alunos) {
 
 }
 ===========================================================================
-/*Um estacionamento deseja automatizar a cobrança de mensalistas. Para isso decidiu simplificar a forma de calcular o valor devido pelo seu cliente. A quantia a ser paga pelos seus usuários depende do número de entradas que o veículo realiza no estacionamento. A cada entrada, a placa do veículo é registrada. Ao final do mês, conta-se o número de entradas que o veículo realizou e faz-se o seguinte cálculo:
+/*Um estacionamento deseja automatizar a cobrança de mensalistas. Para isso decidiu simplificar a forma de calcular o valor devido pelo seu cliente.
+A quantia a ser paga pelos seus usuários depende do número de entradas que o veículo realiza no estacionamento. A cada entrada, a placa do veículo é registrada.
+Ao final do mês, conta-se o número de entradas que o veículo realizou e faz-se o seguinte cálculo:
 
 
 Se o motorista realizou até 20 entradas, ele deve pagar R$ 10,00 por entrada realizada.
@@ -1081,10 +1092,12 @@ Da vigésima primeira entrada em diante, cada entrada custa R$ 5,00 ao cliente.
 	Agora, você deve ajudar na automatização da cobrança escrevendo duas funções.
 
 
-A primeira função se chama calcularNumeroDeEntradas(placa). Ela deve receber um único parâmetro que representa a placa de um carro. A função deve retornar o número de entradas que esse carro realizou no estacionamento. Em outras palavras, o número de vezes que a placa passada como parâmetro aparece no array placas.
+A primeira função se chama calcularNumeroDeEntradas(placa). Ela deve receber um único parâmetro que representa a placa de um carro.
+A função deve retornar o número de entradas que esse carro realizou no estacionamento. Em outras palavras, o número de vezes que a placa passada como parâmetro aparece no array placas.
 
 
-A segunda função se chama calcularValorDevido(placa). Ela deve receber um único parâmetro que representa a placa de um carro. A função deve calcular o valor que o proprietário do carro tem que pagar segundo a política de preços estabelecida. Naturalmente, será necessário utilizar a primeira função dentro da segunda.
+A segunda função se chama calcularValorDevido(placa). Ela deve receber um único parâmetro que representa a placa de um carro.
+A função deve calcular o valor que o proprietário do carro tem que pagar segundo a política de preços estabelecida. Naturalmente, será necessário utilizar a primeira função dentro da segunda.
 // Esse array é utilizado dentro das funções. Cada placa neste array representa
 // uma entrada do respectivo veículo no estacionamento. Não é necessário alterar
 // esse array.
@@ -1141,7 +1154,9 @@ function calcularValorDevido(placa){
 =====================================================
 /*
 cinema
-Em um site sobre cinema, os visitantes cadastrados podem dar notas de 0 a 5 para um filme que ele tenha assistido. Cada filme tem um grande array de notas atribuídas pelos visitantes. Contudo, além de dar notas para os filmes, os visitantes querem ver o que as outras pessoas acharam do filme! É aí que você entra com seu código:
+Em um site sobre cinema, os visitantes cadastrados podem dar notas de 0 a 5 para um filme que ele tenha assistido.
+Cada filme tem um grande array de notas atribuídas pelos visitantes. Contudo, além de dar notas para os filmes, os visitantes querem ver o que as outras pessoas acharam do filme!
+É aí que você entra com seu código:
 
 Escreva uma função calculaGostos(notas)
 
@@ -1185,7 +1200,9 @@ for(var i = 0; i < notas.length; i++){
 /*
 Explicação:
 
-O enunciado é bem claro no que está pedindo. Se clicar em "me dê uma pista" verá que o enunciado já até separou as variáveis que serão enviadas no array. É só copiá-las! Para separar as notas, repare no enunciado novamente. Ele diz claramente com a quantidade de notas IGUAIS a 0 ou 1 o seriam os que não gostaram do filme. Repare na palavra IGUAL. Transcrevendo em código é literalmente o sinal de comparação ==.
+O enunciado é bem claro no que está pedindo. Se clicar em "me dê uma pista" verá que o enunciado já até separou as variáveis que serão enviadas no array.
+É só copiá-las! Para separar as notas, repare no enunciado novamente. Ele diz claramente com a quantidade de notas IGUAIS a 0 ou 1 o seriam os que não gostaram do filme.
+Repare na palavra IGUAL. Transcrevendo em código é literalmente o sinal de comparação ==.
 
 A segunda condição:  com a quantidade de notas IGUAIS a 2 ou 3. Seriam os que acharam o filme mediano. Não tem segredo! Se a condição do enunciado for verdadeira, guarde na variável.
 
@@ -1232,9 +1249,15 @@ function filme(personagens, filmes, lancamentos, id)
 /*
 Explicação:
 
-É só seguir o enunciado. Não tem erro! A primeira condição que o programa estabelece é que o id seja válido. Para que ele seja válido, o seu tamanho mínimo deve ser 1 e também não deve ser maior que o tamanho dos arrays fornecidos. No código, observe que a primeira condição é essa: tratar o id. Muito bem! Se a condição de tratamento do id for verdadeira. Ou seja: se ele atender os requisitos, executaremos o restante do código. Senão for, ou seja, o id for inválido, retornaremos a mensagem de erro: "Essa não é uma opção válida!".
+É só seguir o enunciado. Não tem erro! A primeira condição que o programa estabelece é que o id seja válido.
+Para que ele seja válido, o seu tamanho mínimo deve ser 1 e também não deve ser maior que o tamanho dos arrays fornecidos.
+No código, observe que a primeira condição é essa: tratar o id. Muito bem! Se a condição de tratamento do id for verdadeira.
+Ou seja: se ele atender os requisitos, executaremos o restante do código. Senão for, ou seja, o id for inválido, retornaremos a mensagem de erro: "Essa não é uma opção válida!".
 
-O restante do código se limita a construir a mensagem pedida caso o id seja válido. Como os arrays sempre começam pela posição 0(zero), se o id for 1 não pegará a posição correta. Por isso, devemos subtrair 1 unidade do id para acessar a posição correta dos arrays. A posição 0 do array é a primeira posição. Então, a campo 1 do array é a segunda. E assim por diante. Para resolver esse problema, foi criada uma outra variável que guardasse o id já subtraído. Agora assim! Acessando a posição correta é só concatenar todas as informações e retornar o valor.
+O restante do código se limita a construir a mensagem pedida caso o id seja válido. Como os arrays sempre começam pela posição 0(zero),
+se o id for 1 não pegará a posição correta. Por isso, devemos subtrair 1 unidade do id para acessar a posição correta dos arrays.
+A posição 0 do array é a primeira posição. Então, a campo 1 do array é a segunda. E assim por diante. Para resolver esse problema,
+foi criada uma outra variável que guardasse o id já subtraído. Agora assim! Acessando a posição correta é só concatenar todas as informações e retornar o valor.
 */
 ==================================
 /*
@@ -1278,7 +1301,9 @@ return menoresNum
 ===============================================
 /*
 Busca divisível por
-Programe uma função buscarDivisivelPor que recebe dois parâmetros, um array de números e um número de teste, retornando como resposta o primeiro número do array que seja divisível pelo número dado e também seja diferente de zero. Caso nenhum número do array passe no teste, retorne o texto "Nenhum número válido encontrado!".
+Programe uma função buscarDivisivelPor que recebe dois parâmetros, um array de números e um número de teste,
+retornando como resposta o primeiro número do array que seja divisível pelo número dado e também seja diferente de zero.
+Caso nenhum número do array passe no teste, retorne o texto "Nenhum número válido encontrado!".
 */
 
 
@@ -1302,7 +1327,8 @@ function buscarDivisivelPor(array, num)
 /*
 Explicação:
 
-O if vai verificar se dentro dos indices do array, existe algum número com mod em na variavel num que retorne 0, pois sabemos que qualquer numero que seja divisivel por outro, resto é zero, depois ele vai verificar se existe dentro do array um numero que seja 0, se ambos as declarações forem verdadeiras, ele vai retornar o número do array que foi divísivel.
+O if vai verificar se dentro dos indices do array, existe algum número com mod em na variavel num que retorne 0, pois sabemos que qualquer numero que seja divisivel por outro,
+resto é zero, depois ele vai verificar se existe dentro do array um numero que seja 0, se ambos as declarações forem verdadeiras, ele vai retornar o número do array que foi divísivel.
 
 Em seguida se ele ver que terminou de varrer o array comparando a var i com o tamanho do indice e não houve nenhum número divisível, ele retorna 'Nenhum número válido encontrado'.
 */
@@ -1318,7 +1344,8 @@ function repete(valor,qtd){
 }
 ====================================================
 /*
-Programe uma função series que recebe dois parâmetros, um prefixo com o nome da série e um array com a lista de todos os episódios da série. A função deve retornar um novo array com a lista de episódios iniciando com o nome da série.
+Programe uma função series que recebe dois parâmetros, um prefixo com o nome da série e um array com a lista de todos os episódios da série.
+A função deve retornar um novo array com a lista de episódios iniciando com o nome da série.
 
 
 
