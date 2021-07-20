@@ -1338,9 +1338,10 @@ Em seguida se ele ver que terminou de varrer o array comparando a var i com o ta
 
 function repete(valor,qtd){
   
-  for(i = 0; i< qtd; i++)
+  for(i = 0; i< qtd; i++){
  
-  console.log(valor)
+    console.log(valor)
+  }
 }
 ====================================================
 /*

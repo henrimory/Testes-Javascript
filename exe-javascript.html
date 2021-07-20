@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+
+   <button onclick="contar()">Contar</button><br />
+
+   <script type="text/javascript">
+    /*var nome = prompt("Digite seu nome:")
+    var idade = prompt("Digite sua idade:");
+
+    document.write(nome);
+    document.write(idade);
+       
+    
+    function contar(){
+        count = 1;  
+
+        while (count<=100){
+        if(count%3 == 0)
+        document.writeln(count+"<br />");
+        count = count + 1;
+        }
+   }
+   */
+   </script>
+   
+ </head>
+    <body>
+        <canvas id = "meuRetangulo" width = "300" height = "200"
+            style = "border: 1px solid black;">
+            O Canvas não está ativado em seu Browser
+        </canvas>
+        <script type="text/javascript">
+            var canvas = document.getElementById("meuRetangulo");
+            var context = canvas.getContext("2d")
+
+            //Quadrado azul
+            context.fillStyle = "rgb(0,0,200)";
+            context.fillRect(50, 50, 50, 50);
+
+            //Quadrado vermelho com transparência
+            context.fillStyle = "rgb(200,0,0, 0.5)";
+            context.fillRect(75, 75, 50, 50);
+        </script>
+    </body>
+
+</html>
