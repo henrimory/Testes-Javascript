@@ -1391,3 +1391,20 @@ function series(prefixo, array)
     
 }
 =========================================================
+function listarPersonagens(){
+  var pessoas = [
+      {nome: 'josue',papel:'Peter pan'},
+      {nome: 'henrique',papel:'Wendy'},
+      {nome: 'Gui',papel:'capitão'},
+      {nome: 'vi',papel:'tinker'}
+  ]
+
+  pessoas.forEach(pessoas =>{
+      console.log('Ator: '+ pessoas.nome)
+      console.log('Papel: '+ pessoas.papel)
+  })
+  
+
+}
+
+console.log(listarPersonagens())
